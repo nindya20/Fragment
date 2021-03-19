@@ -14,7 +14,21 @@ Fragment juga bisa disebut sub nya activity (Sebuah fragment harus berada di dal
 
 # Fragment Lifecycle
 Fragment memiliki sirkulasi kehidupan atau yang biasanya disebut “lifecycle”, seperti yang ditunjukkan pada Gambar di bawah ini :
-https://user-images.githubusercontent.com/60412314/109187982-0325be80-77c5-11eb-8e0e-c9cb9907ae22.png
+![109187982-0325be80-77c5-11eb-8e0e-c9cb9907ae22](https://user-images.githubusercontent.com/60589822/111760253-13672000-88d1-11eb-8b28-0ead431a8351.png)
+1. onAttach() dipanggil saat sebuah fragment terhubung ke activity.
+2. onCreate() diapnggil saat sebuah fragment dibuat (objeknya di memori).
+3. onCreateView() dipanggil saat fragment sudah siap membaca sebuah layout.
+4. onViewCreated() dipanggil setelah onCreateView() dan memastikan layout yang dibaca fragment adalah non-null. Semua pengaturan view seperti pembacaan findViewById, menambah onClickListener dapat dilakukan di sini.
+5. onActivityCreated() dipanggil setelah activity pembaca sudah menyelesaikan onCreate()-nya.
+6. onStart() dipanggil setelah fragment siap untuk ditampilkan di layar.
+7. onResume() - Dipakai untuk melakukan pembacaan data yang lebih “rumit” seperti lokasi, sensor, dll.
+8. onPause() - Tempat melepas data “rumit”. Lakukan commit di sini.
+9. onDestroyView() dipanggil saat layout sebuah fragment akan dihapus dari memori, namun fragmentnya masih ada di memori. 10.onDestroy() dipanggil jika fragment sudah tidak dipakai.
+10. onDetach() dipanggil saat fragment tidak lagi terhubung ke sebuah activity.
 
+# Pembuatan Sebuah Fragment
+Sebuah fragment, seperti activity, memiliki XML layout-nya sendiri dan sebuah kelas java sebagai controller dari Fragment tersebut.Layout XML yang dimiliki oleh fragment, sama seperti layout-layout lainnya dan bisa memiliki nama apa saja (selama memiliki format yang ditentukan).
+
+# Penerapan Fragment
 ![WhatsApp Image 2021-03-19 at 16 18 47](https://user-images.githubusercontent.com/60589822/111758805-7bb50200-88cf-11eb-9103-5375208c50cc.jpeg)
 ![WhatsApp Image 2021-03-19 at 16 18 45](https://user-images.githubusercontent.com/60589822/111758829-840d3d00-88cf-11eb-8954-d93017618f6d.jpeg)
