@@ -23,7 +23,7 @@ Fragment memiliki sirkulasi kehidupan atau yang biasanya disebut “lifecycle”
 6. onStart() dipanggil setelah fragment siap untuk ditampilkan di layar.
 7. onResume() - Dipakai untuk melakukan pembacaan data yang lebih “rumit” seperti lokasi, sensor, dll.
 8. onPause() - Tempat melepas data “rumit”. Lakukan commit di sini.
-9. onDestroyView() dipanggil saat layout sebuah fragment akan dihapus dari memori, namun fragmentnya masih ada di memori.
+9. onDestroyView() dipanggil saat layout sebuah fragment akan dihapus dari memori, namun fragmentnya masih ada di memori. 
 10. onDetach() dipanggil saat fragment tidak lagi terhubung ke sebuah activity.
 
 # Pembuatan Sebuah Fragment
