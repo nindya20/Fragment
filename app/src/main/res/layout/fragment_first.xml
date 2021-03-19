@@ -2,13 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="#008B8B"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="First Fragment"
-        android:textColor="#FFF" />
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/customm"
+        android:padding="10dp"
+        android:text="Daftar Siswa Laki Laki"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="112dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/laki" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="10dp"
+        android:text="1. Aaron Evanjulio
+\n2. Abdhy Samoedra
+\n3. Adi Laksana         \n4. Ahmadun Na'il
+\n5. Bayu Nugraha
+\n6. Farel Faiza
+\n7. Genggam Samudra       \n8. Kresna Mukti Wibowo  "
+        android:textColor="#ffffff"
+        android:textSize="23sp" />
 </LinearLayout>
